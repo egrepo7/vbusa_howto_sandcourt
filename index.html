@@ -4,6 +4,7 @@
 	<title>Beach Sand</title>
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
 	
@@ -16,7 +17,7 @@
 						<p class="sandHead">In search of quality sand and not just the lowest price in town?</p>
 						<p class="sandHead">Purchase from the leader in beach volleyball court construction!</p>
 
-						<p>We've been constructing beach volleyball courts for the past 20 years. We've been manufacturing long lasting equipment here in the United States and instructing homeowners / contractors how to prep /drain courts properly. It's been disappointing in the past to build beautiful volleyball courts with great equipment in perfect settings and end up with bad sand.</p>
+						<p style="padding-top:10px;">We've been constructing beach volleyball courts for the past 20 years. We've been manufacturing long lasting equipment here in the United States and instructing homeowners / contractors how to prep /drain courts properly. It's been disappointing in the past to build beautiful volleyball courts with great equipment in perfect settings and end up with bad sand.</p>
 
 						<div class="ContentAndGrate">
 							<div class="sandText">
@@ -31,8 +32,8 @@
 								</ol>
 							</div>
 							<div class="gratePhoto">
-								<a href="">
-									<img src="images/pic.jpg">
+								<a href="https://cdn6.bigcommerce.com/s-cf8ys9ikz8/product_images/uploaded_images/masonry-sand-pea-gravel-large.jpg?t=1484001205">
+									<img src="https://www.volleyballusa.com/product_images/uploaded_images/masonry-sand-pea-gravel-large.jpg">
 								</a>
 								<p>Masonary sand's "pea gravel" being removed by Volleyball USA's Sand Grate.</p>
 							</div>
@@ -57,10 +58,10 @@
 								<p>Play Sand is designed to be sat in and played with by little kids and is sold at a lower price. To keep the price low they don't remove the dust. It has lots of dust that is very noticeable as soon as you put a bunch of it down and start playing volleyball in it.</p>
 						</div>
 						<div class="golfPhoto">
-							<a href="">
-								<img src="images/pic.jpg">
+							
+								<img src="https://www.volleyballusa.com/product_images/uploaded_images/no-fried-egg-golf-sand.jpg">
 								<p>Do not use golf sand for volleyball courts! It's too abrasive</p>
-							</a>
+						
 						</div>
 					</div>
 				</div>
@@ -81,15 +82,16 @@
 
 						</div>
 						<div class="gratePhoto">
-							<a href="">
-								<img src="images/pic.jpg">
+							<a href="https://cdn6.bigcommerce.com/s-cf8ys9ikz8/product_images/uploaded_images/volleyball-sand-pile.jpg?t=1484003548">
+								<img src="https://www.volleyballusa.com/product_images/uploaded_images/volleyball-sand-pile.jpg">
 							</a>
+							<p>Example of our volleyball sand ready to deliver. Color determined by the site the sand is sourced, screened, and blended at.</p>
 						</div>
 					</div>
 				</div>
 				<div class="sandRow">
 					<h4>Sand Reception Agreement</h4>
-					<p class="sandHead">If you decide to purchase sand through us you will be required to sign our Sand Reception Agreement (We work hard to source and sell sand but do not own the plants or the trucking companies that deliver the sand):</p>
+					<p class="agreeHead">If you decide to purchase through Volleyball USA, you will be required to sign a Sand Reception Agreement. We work hard to source the best sand for our customers but, we do not own the companies that deliver the sand.</p>
 				</div>
 				<div class="sandRow">
 					<div class="sandAgree">
@@ -108,12 +110,118 @@
 
 							<p>Finally, If you schedule a delivery of your sand and you cancel / delay / change this delivery within 48 hours a $500 fee will be charged and forwarded to the trucking company. The fee is due to the fact that it is common with late notice for the truckers to not be able to get other work as they have set aside time for your job. We see many customers change their minds last minute and bump the deliveries out. We don’t feel it’s fair to the truck drivers to miss out on a day of paid work because of a delay at the delivery site. Please be respectful of their time and don’t make last minute cancellations.</p>
 
-							<p>To be signed and dated between VolleyballUSA.com and the customer.</p>
+							<p class="agreeSig">*To be signed and dated between VolleyballUSA.com and the customer*</p>
+						</div>
+					</div>
+				</div>
+				<div class="sandRow">
+					<div class="sandCalc">
+						<h4>We Ship Free Samples of Volleyball Sand Upon Approval of Quoted Price</h4>
+						<div class="txtContainer">
+							<!-- <img src="images/sandcalculator.jpg"> -->
+							<img src="images/unitedstates.jpg">
+
+							<form>
+								<table>
+									<thead>
+										<th>Width<br>(Feet)</th>
+										<th>Length<br>(Feet)</th>
+										<th>Depth</th>
+										<th>Density (lbs/cubic yd)</th>
+										<th><input type="submit" value="Clear" onclick="clearform(this.form,4,11)"></th>
+									</thead>
+									<tr>
+										<td><input type="text" name="val1" size="7"></td>
+										<td><input type="text" name="val2" size="7"></td>
+										<td><input type="text" name="val3" size="7"></td>
+										<td><input type="text" name="val4" value="2700"></td>
+										<td><input type="button" value="Calculate" onclick="calcAgg(this.form)"></td>
+									</tr>
+									<tr>
+										<td></td>
+										<td></td>
+										<td>
+											<input type="radio" name="InchesFeet" value="inches" checked="checked"> Inches
+											<br>
+											<input type="radio" name="InchesFeet" value="feet"> Feet
+										</td>
+										<td>
+											<input type="radio" name="RockType" onclick="setDensity (this.form, '2700')" value="Sand16" checked="checked"> Sand
+											<br>
+											<input type="hidden" name="RockType" value="Sand20-30" onclick="setDensity (this.form, '2835')"> 
+											<input type="radio" name="RockType" value="Custom">Custom
+										</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td colspan="4" align="center"><strong>Total Tons Required:</strong></td>
+										<td align="right"><input type="text" name="val5" size="7"></td>
+									</tr>
+								</table>
+							</form>
+							<p>Volleyball USA's Sand Volleyball Calculator helps you to estimate the sand tonnage required for your job.</p>
+							<p>After you know how much material you need, please call <strong>1-800-494-3933</strong> for a free estimate</p>
+							<p><strong>Call Toll Free to Order at 1-800-494-3933</strong></p>
+							<p><strong>Open 8AM to 6PM Everyday</strong></p>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
+
+		<script type="text/javascript" language="JavaScript">// <![CDATA[
+function calcAgg(form) {
+    var aggAmt = 0;
+    if (form.elements[8].checked == true)
+       form.elements[4].value = "2700";
+    else if (form.elements[9].checked == true)
+       form.elements[4].value="2700";
+    for (var i = 1; i <= 3; i++) {
+       var parsecheck = "" + parseFloat(form.elements[i].value);
+       if (parseFloat(form.elements[i].value) < 0 ||
+           parseFloat(form.elements[i].value) == 0 ||
+           parsecheck == "NaN") {
+          window.alert("Please enter a positive number in each of the " +
+                       "four input fields.");
+          return false;
+       }
+    }
+    if (form.elements[6].checked == true) 
+       aggAmt = (form.elements[1].value * form.elements[2].value *
+                 (form.elements[3].value / 12.0) / 27.0) * 
+                 form.elements[4].value / 2000.0;
+    else 
+       aggAmt = (form.elements[1].value * form.elements[2].value *
+                 form.elements[3].value / 27.0) *
+                 form.elements[4].value / 2000.0;
+    form.elements[11].value = formatvalue(aggAmt,7);
+    return true;
+}
+ 
+function formatvalue(input, rsize) {
+   var invalid = "**************************";
+   var nines = "999999999999999999999999";
+   var strin = "" + input;
+   var fltin = parseFloat(strin);
+   if (strin.indexOf("e") != -1 ||
+       fltin > parseFloat(nines.substring(0,rsize)+".4"))
+      return invalid.substring(0, rsize);
+   if (strin.length <= rsize) return strin;
+   var rounded = "" + (fltin + 
+      (fltin - parseFloat(strin.substring(0, rsize))));
+   return rounded.substring(0, rsize);
+}
+ 
+function clearform(form,count,lastElement) {
+    for (var i = 1; i <= count; i++) form.elements[i].value = "";
+    form.elements[lastElement].value = "";
+}
+ 
+function setDensity(form,density) {
+    form.elements[4].value=density;
+    form.elements[11].value=" ";
+}
+// ]]></script>
 	
 </body>
 </html>

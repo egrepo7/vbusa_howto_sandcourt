@@ -21,6 +21,7 @@ body {
 .beachSandPage {
  	background: white;
  	padding-top: 5px;
+ 	line-height: 1.5em;
 }
 p {
 	margin-top: 0;
@@ -75,4 +76,70 @@ h4 {
 
 .sandRow iframe {
 	margin: 0 auto;
+}
+
+.agreeHead {
+	width: 70%;
+	margin: 0 auto;
+	text-align: center;
+	font-weight: bold;
+	padding-bottom: 25px;
+}
+
+.agreeSig {
+/*	width: 70%;
+	border-bottom:1px solid black;
+	padding-bottom: 50px;*/
+	text-align: center;
+}
+
+.sandCalc {
+	text-align: center;
+}
+
+.sandCalc img {
+	max-width: 100%;
+	padding-bottom: 10px;
+}
+
+.sandCalc table {
+	margin: 0 auto 30px;
+	border-collapse: collapse;
+	/*padding-bottom: 30px;*/
+	border: 1px solid black;
+}
+
+.sandCalc th, td {
+	padding: 15px;
+	border: 1px solid darkgrey;
+}
+
+.sandCalc th {
+	background: #2f7de4;
+	color: white;
+	text-align: center;
+	font-weight: 700;
+	padding:5px;
+}
+
+.sandCalc tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.sandCalc table input {
+	text-align: center;
+}
+
+@media (max-width: 479px) {
+	.txtContainer {
+		width: 100%;
+	}
+	.sandText {
+		width: 100%;
+	}
+	.gratePhoto,
+	.golfPhoto {
+		width:100%;
+		text-align: center;
+	}
 }
